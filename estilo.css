@@ -1,0 +1,39 @@
+body {
+	background-size: auto;
+}
+
+.perfil {
+	position: absolute;
+	width: 1151px;
+	left: 215px;
+}
+
+.menu {
+	position: absolute;
+	width: 1320px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: #00000096;
+	border: none;
+}
+
+.menu img { 
+	position: absolute;
+	width: 100px;
+	border-radius: 100px;
+}
+
+.menu h1 {
+	position: absolute;
+	color: white;
+	font-family: arial;
+	font-size: 45px;
+	left: 130px;
+	top: 5px;
+}
+
+.konoha {
+	position: absolute;
+	border-radius: 100px;
+
+}
