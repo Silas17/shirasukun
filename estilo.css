@@ -7,6 +7,7 @@
 */
 body {
 	background-size: auto;
+	background: url(944541.png)
 }
 
 @media (min-width: 720px){
@@ -20,12 +21,6 @@ header {
 	display: flex;
 }
 
-.back {
-	position: absolute;
-	width: 1151px;
-
-
-}
 
 .menu {
 	position: absolute;
