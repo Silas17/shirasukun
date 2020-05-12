@@ -21,7 +21,9 @@ header {
 }
 
 .back {
-	width: auto;
+	position: absolute;
+	width: 1151px;
+	left: 215px;
 
 }
 
