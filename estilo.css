@@ -7,11 +7,11 @@
 */
 body {
 	background-size: auto;
-	backgound-color:  black;
+	
 }
 
 @media (min-width: 720px){
-	background-size: auto;
+	
 }
 
 header {
@@ -124,7 +124,7 @@ header {
 
 }
 
-body, .grid-icons a, .box, .konoha, .back, .menu img {
+.grid-icons a, .box, .konoha, .back, .menu img {
 	opacity: 0;
 	animation: linear 2s animacaoIcon forwards;
 }
