@@ -10,9 +10,7 @@ body {
 }
 
 @media (min-width: 720px){
-	body{
 
-	}
 }
 
 header {
@@ -20,9 +18,15 @@ header {
 	display: flex;
 }
 
+.back {
+	position: absolute;
+	width: 1151px;
+	left: 211px
+
+}
 
 .menu {
-	position: absolute;
+	position: fixed;
 	width: 1320px;
 	height: 100px;
 	border-radius: 10px;
@@ -43,14 +47,31 @@ header {
 	font-size: 45px;
 	left: 130px;
 	top: 5px;
+	
+	transform: translateX(-10vh);
+	opacity: 0;
+	animation: linear 1s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {	
+	0%{
+		transform: translateX(-10vh);
+	opacity: 0;
+	}
+	100%{
+		transform: translateX(0vh);
+	opacity: 1;
+	}
 }
 
 .konoha {
-	position: absolute;
+	position: fixed;
 	border-radius: 100px;
 	top: 0px;
 	width: 125px;
 	left: 400px;
+
+
 }
 
 .box {
@@ -61,12 +82,21 @@ header {
 	height: 150px;
 	border-radius: 10px; 
 	background-color: #00000096;
+
+	
+}
+
+
+.box:hover {
+	transform: scale(1.05) rotate(-10deg);
+	transition: 1s;
+
 }
 
 .frase1 {
 	position: absolute;
     color: white;
-  	font-size: 45px;'
+  	font-size: 45px;
 }
 
 .frase2 {
@@ -80,4 +110,34 @@ header {
     width: 200px;
     left: 200px;
     top: 65px;
+}
+
+.grid-icons a{
+	color: whitesmoke;
+	position: relative;
+	font-size: 3em;
+	top: 12em;
+	padding: 1em;
+	text-decoration: none;
+	transition: text-shadow 1s;
+
+}
+
+.grid-icons a, .box, .konoha, .back, .menu img {
+	opacity: 0;
+	animation: linear 2s animacaoIcon forwards;
+}
+
+@keyframes animacaoIcon {
+	0%{		
+	opacity: 0;
+	}
+	100%{
+	opacity: 1;
+	}
+}
+
+.grid-icons a:active, 
+.grid-icons a:hover {
+	text-shadow: 0px 0px 10px whitesmoke;
 }
